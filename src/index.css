@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    /*fonts*/
+    --font-inter: "inter", sans-serif;
+    --font-fira-sans: "Fira Sans", sans-serif;
+
+    /*colors*/
+    --color-primary: #7A5DFC;
+    --color-secundary: #EC6B90;
+    --color-card-background: #090909;
+    --color-card-border: #212121;
+    --color-icons-background: #090909;
+    --color-text-gray: #6B7174;
+    --color-text-light: #CCCCCC;
+    --color-border-header: #6F6D6E;
+}
+
+* {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: black;
+}
