@@ -4,6 +4,7 @@ import { Hero } from "./components/layout/Hero/Hero";
 import { SectionSkills } from "./components/layout/Sections/SectionSkills";
 import { SectionAboutMe } from "./components/layout/Sections/SectionAboutMe";
 import { SectionProjects } from "./components/layout/Sections/SectionProjects";
+import { SectionContacts } from "./components/layout/Sections/SectionContacts";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
                 <SectionAboutMe/>
                 <SectionSkills/>
                 <SectionProjects/>
+                <SectionContacts/>
             </div>
         </Background>
     );

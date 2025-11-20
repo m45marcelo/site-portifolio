@@ -1,5 +1,7 @@
 import iconCss from "../../assets/icon-css.png";
+import iconEnter from "../../assets/icon-enter.png";
 import iconExpress from "../../assets/icon-express.png";
+import iconGitHub from "../../assets/icon-github.png";
 import iconHtml from "../../assets/icon-html.png";
 import iconMongo from "../../assets/icon-mongodb.png";
 import iconNext from "../../assets/icon-next.png";
@@ -10,14 +12,12 @@ import iconStyledComponents from "../../assets/icon-styled-components.png";
 import iconTailwind from "../../assets/icon-Tailwind.png";
 import iconTypescript from "../../assets/icon-Typescript.png";
 
-import iconGitHub from "../../assets/icon-github.png";
-import iconEnter from "../../assets/icon-enter.png";
-
 import imageProject1 from "../../assets/image-project-1.png";
 import { CustomH2 } from "../other/CustomH2";
 import { CustomText } from "../other/CustomText";
 import { CardIconStack } from "./CardIconStack";
 import { CardSkill } from "./CardSkill";
+import { CustomButtonAction } from "./CustomButonAction";
 
 export const CardProject = () => {
 	return (
@@ -66,14 +66,10 @@ export const CardProject = () => {
 							/>
 						</div>
 					</div>
-                    <div className="flex gap-2">
-                        <div className="rounded-full cursor-pointer h-9.5 w-9.5 flex items-center justify-center bg-icons-background border border-card-border">
-                            <img alt="icon github" src={iconGitHub} className="h-5 w-5"/>
-                        </div>
-                        <div className="rounded-full cursor-pointer h-9.5 w-9.5 flex items-center justify-center bg-icons-background border border-card-border">
-                            <img alt="icon Enter Site" src={iconEnter} className="h-5 w-5"/>
-                        </div>
-                    </div>
+					<div className="flex gap-2">
+						<CustomButtonAction icon="GitHub" heightButton="small" heightIcon={20} widthIcon={20}/>
+						<CustomButtonAction icon="Enter" heightButton="small" heightIcon={20} widthIcon={20}/>
+					</div>
 				</div>
 				<CustomText className="text-base font-light text-text-light leading-4.75">
 					Projeto Full-Stack de um Gerenciador de despesas pessoal
