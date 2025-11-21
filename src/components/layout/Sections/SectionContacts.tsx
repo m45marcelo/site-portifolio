@@ -38,7 +38,7 @@ export const SectionContacts = () => {
                                 <div className="h-10 w-10 rounded-full bg-primary flex justify-center items-center">
                                     <img alt="icon local" src={iconLocal} className="h-4"/>
                                 </div>
-                                <div className="flex flex-col gap-1">
+                                <div className="flex flex-col">
                                     <CustomText className="text-[1.125rem] font-semibold text-white">Localização</CustomText>
                                     <CustomText className="text-base font-medium text-text-gray">Balsas - Ma</CustomText>
                                 </div>
@@ -48,7 +48,7 @@ export const SectionContacts = () => {
                                 <div className="h-10 w-10 rounded-full bg-primary flex justify-center items-center">
                                     <img alt="icon telephone" src={iconEmail} className="h-4"/>
                                 </div>
-                                <div className="flex flex-col gap-1">
+                                <div className="flex flex-col">
                                     <CustomText className="text-[1.125rem] font-semibold text-white">E-mail</CustomText>
                                     <CustomText className="text-base font-medium text-text-gray">m45marceloaugusto@gmail.com</CustomText>
                                 </div>
@@ -58,7 +58,7 @@ export const SectionContacts = () => {
                                 <div className="h-10 w-10 rounded-full bg-primary flex justify-center items-center">
                                     <img alt="icon telephone" src={iconTelephone} className="h-4"/>
                                 </div>
-                                <div className="flex flex-col gap-1">
+                                <div className="flex flex-col">
                                     <CustomText className="text-[1.125rem] font-semibold text-white">Telefone</CustomText>
                                     <CustomText className="text-base font-medium text-text-gray">(99) 9 9214-4545</CustomText>
                                 </div>
