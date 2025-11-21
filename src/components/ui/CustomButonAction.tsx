@@ -33,14 +33,15 @@ export const CustomButtonAction = ({
 		>
 			{icon === "GitHub" && (
 				<>
-					<a href="https://github.com/m45marcelo" rel="noopener" target="_blank">
-                        <img
-						alt="icon github"
-						src={iconGitHub}
-						height={heightIcon}
-						width={widthIcon}
-					/>
-                    </a>
+					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
+					<a href="https://github.com/m45marcelo" target="_blank">
+						<img
+							alt="icon github"
+							src={iconGitHub}
+							height={heightIcon}
+							width={widthIcon}
+						/>
+					</a>
 					<span
 						className={`absolute ${stateTooltip} pointer-events-none
  						w-29.5 -top-10 bg-card-background flex text-[14px] text-white font-normal py-1 px-2 rounded border border-card-border`}
@@ -51,12 +52,15 @@ export const CustomButtonAction = ({
 			)}
 			{icon === "Enter" && (
 				<>
-					<img
-						alt="icon enter"
-						src={iconEnter}
-						height={heightIcon}
-						width={widthIcon}
-					/>
+					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
+					<a href="https://github.com/m45marcelo" target="_blank">
+						<img
+							alt="icon enter"
+							src={iconEnter}
+							height={heightIcon}
+							width={widthIcon}
+						/>
+					</a>
 
 					<span
 						className={`absolute ${stateTooltip} pointer-events-none
@@ -68,12 +72,15 @@ export const CustomButtonAction = ({
 			)}
 			{icon === "Linkedin" && (
 				<>
-					<img
-						alt="icon linkedin"
-						src={iconLinkedin}
-						height={heightIcon}
-						width={widthIcon}
-					/>
+					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
+					<a href="https://github.com/m45marcelo" target="_blank">
+						<img
+							alt="icon linkedin"
+							src={iconLinkedin}
+							height={heightIcon}
+							width={widthIcon}
+						/>
+					</a>
 					<span
 						className={`absolute ${stateTooltip} pointer-events-none
  						w-31.5 -top-10 bg-card-background flex text-[14px] text-white font-normal py-1 px-2 rounded border border-card-border`}
@@ -84,12 +91,15 @@ export const CustomButtonAction = ({
 			)}
 			{icon === "Instagram" && (
 				<>
-					<img
-						alt="icon instagram"
-						src={iconInstagram}
-						height={heightIcon}
-						width={widthIcon}
-					/>
+					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
+					<a href="https://github.com/m45marcelo" target="_blank">
+						<img
+							alt="icon instagram"
+							src={iconInstagram}
+							height={heightIcon}
+							width={widthIcon}
+						/>
+					</a>
 					<span
 						className={`absolute ${stateTooltip} pointer-events-none
  						w-34 -top-10 bg-card-background flex text-[14px] text-white font-normal py-1 px-2 rounded border border-card-border`}

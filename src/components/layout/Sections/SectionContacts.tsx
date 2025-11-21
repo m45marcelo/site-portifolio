@@ -10,7 +10,7 @@ import { CustomButtonAction } from "../../ui/CustomButonAction";
 
 export const SectionContacts = () => {
     return(
-        <section className="w-full flex flex-col items-center max-w-299.5 mb-15"> 
+        <section id="contacts" className="w-full flex flex-col items-center max-w-299.5 mb-15"> 
             <CustomH2 className="text-[2rem] h-11.5 mb-10 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-[#7A5DFC] after:to-[#EC6B90]">Sobre Min</CustomH2>
             <div className="flex w-full gap-5">
                 <form className="flex flex-col w-full max-w-147.25">

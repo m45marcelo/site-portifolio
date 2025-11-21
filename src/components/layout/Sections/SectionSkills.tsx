@@ -9,7 +9,7 @@ import iconMoveis from "../../../assets/icon-moveis.png";
 
 export const SectionSkills = () => {
 	return (
-		<section className="h-150 w-full max-w-299.5 flex flex-col items-center mb-15">
+		<section id="skills" className="h-150 w-full max-w-299.5 flex flex-col items-center mb-15">
 			<CustomH2 className="text-[2rem] h-11.5 mb-10 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-[#7A5DFC] after:to-[#EC6B90]">
 				Habilidades
 			</CustomH2>

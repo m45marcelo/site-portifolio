@@ -6,7 +6,7 @@ import imageUser from "../../../assets/image-user2.png";
 
 export const Hero = () => {
 	return (
-		<section className="h-104.5 w-full max-w-294.25 flex justify-between mt-33.25 mb-15">
+		<section id="home" className="h-104.5 w-full max-w-294.25 flex justify-between mt-[12.6875rem] mb-15">
 			<div className="h-full w-full max-w-176 flex flex-col">
 				
 				<h2 className="text-2xl font-medium font-fira-sans text-white">
@@ -58,15 +58,15 @@ export const Hero = () => {
 
 				<div className="flex gap-4.5">
 					<CustomButton isPrimary>
-						<span className="text-white font-fira-sans font-semibold text-[1.25rem] drop-shadow-[0_4px_4px] drop-shadow-black/25">
+						<a href="#home"  className="text-white h-full w-full font-fira-sans font-semibold text-[1.25rem] drop-shadow-[0_4px_4px] drop-shadow-black/25">
 							Baixar Curriculo
-						</span>
+						</a>
 					</CustomButton>
 
 					<CustomButton isPrimary={false}>
-						<span className="text-white font-fira-sans font-semibold text-[1.25rem] drop-shadow-[0_4px_4px] drop-shadow-black/25">
+						<a href="#contacts" className="text-white h-full w-full font-fira-sans font-semibold text-[1.25rem] drop-shadow-[0_4px_4px] drop-shadow-black/25">
 							Contatos
-						</span>
+						</a>
 					</CustomButton>
 				</div>
 			</div>
