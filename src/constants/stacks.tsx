@@ -7,8 +7,8 @@ import iconNode from "../assets/icon-node.png";
 import iconReact from "../assets/icon-react.png";
 import iconRedux from "../assets/icon-redux.png";
 import iconStyledComponents from "../assets/icon-styled-components.png";
-import iconTailwind from "../assets/icon-Tailwind.png";
-import iconTypescript from "../assets/icon-Typescript.png";
+import iconTailwind from "../assets/icon-tailwind.png";
+import iconTypescript from "../assets/icon-typescript.png";
 
 export const STACKS = [
 	{ name: "HTML", icon: iconHtml },
