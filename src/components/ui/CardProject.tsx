@@ -4,7 +4,7 @@ import iconHtml from "../../assets/icon-html.png";
 
 import iconReact from "../../assets/icon-react.png";
 
-import iconTailwind from "../../assets/icon-Tailwind.png";
+import iconTailwind from "../../assets/icon-tailwind.png";
 
 
 import imageProject1 from "../../assets/image-project-1.png";
