@@ -1,22 +1,17 @@
 import iconCss from "../../assets/icon-css.png";
-import iconEnter from "../../assets/icon-enter.png";
-import iconExpress from "../../assets/icon-express.png";
-import iconGitHub from "../../assets/icon-github.png";
+
 import iconHtml from "../../assets/icon-html.png";
-import iconMongo from "../../assets/icon-mongodb.png";
-import iconNext from "../../assets/icon-next.png";
-import iconNode from "../../assets/icon-node.png";
+
 import iconReact from "../../assets/icon-react.png";
-import iconRedux from "../../assets/icon-redux.png";
-import iconStyledComponents from "../../assets/icon-styled-components.png";
+
 import iconTailwind from "../../assets/icon-Tailwind.png";
-import iconTypescript from "../../assets/icon-Typescript.png";
+
 
 import imageProject1 from "../../assets/image-project-1.png";
 import { CustomH2 } from "../other/CustomH2";
 import { CustomText } from "../other/CustomText";
 import { CardIconStack } from "./CardIconStack";
-import { CardSkill } from "./CardSkill";
+
 import { CustomButtonAction } from "./CustomButonAction";
 
 export const CardProject = () => {
