@@ -73,7 +73,7 @@ export const CustomButtonAction = ({
 			{icon === "Linkedin" && (
 				<>
 					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
-					<a href="https://github.com/m45marcelo" target="_blank">
+					<a href="https://www.linkedin.com/in/marcelo-augusto-reis-de-sousa-17202819b/" target="_blank">
 						<img
 							alt="icon linkedin"
 							src={iconLinkedin}
@@ -92,7 +92,7 @@ export const CustomButtonAction = ({
 			{icon === "Instagram" && (
 				<>
 					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
-					<a href="https://github.com/m45marcelo" target="_blank">
+					<a href="https://www.instagram.com/m45marcelo/" target="_blank">
 						<img
 							alt="icon instagram"
 							src={iconInstagram}
