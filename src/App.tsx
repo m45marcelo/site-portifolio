@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Loader } from "./components/layout/Loader/Loader";
+
 
 import { Background } from "./components/layout/Background/Background";
 import { Header } from "./components/layout/Header/Header";
@@ -9,28 +9,30 @@ import { SectionAboutMe } from "./components/layout/Sections/SectionAboutMe";
 import { SectionProjects } from "./components/layout/Sections/SectionProjects";
 import { SectionContacts } from "./components/layout/Sections/SectionContacts";
 import { Footer } from "./components/layout/Footer/footer";
-
+import { Loader } from "./components/layout/Loader/Loader";
 
 function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const handleLoad = () => {
-            setLoading(false);
+            // Espera 2 segundos após o carregamento
+            setTimeout(() => {
+                setLoading(false);
+            }, 2000);
         };
 
         window.addEventListener("load", handleLoad);
 
-        return () => {
-            window.removeEventListener("load", handleLoad);
-        };
+        return () => window.removeEventListener("load", handleLoad);
     }, []);
 
-    
+    if (loading) {
+        return <Loader />;
+    }
 
     return (
-        <div className="flex flex-col w-full justify-center items-center">
-            <Background>
+        <Background>
             <Header />
             <div className="absolute top-0 left-0 w-full flex flex-col justify-center items-center">
                 <Hero />
@@ -41,7 +43,6 @@ function App() {
                 <Footer />
             </div>
         </Background>
-        </div>
     );
 }
 
