@@ -10,6 +10,7 @@ import { SectionProjects } from "./components/layout/Sections/SectionProjects";
 import { SectionContacts } from "./components/layout/Sections/SectionContacts";
 import { Footer } from "./components/layout/Footer/footer";
 
+
 function App() {
     const [loading, setLoading] = useState(true);
 

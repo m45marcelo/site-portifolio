@@ -10,9 +10,9 @@ import { CustomButtonAction } from "../../ui/CustomButonAction";
 
 export const SectionContacts = () => {
     return(
-        <section id="contacts" className="w-full flex flex-col items-center max-w-299.5 mb-15 px-5 xl:px-0"> 
+        <section id="contacts" className="w-full flex flex-col items-center max-w-299.5 mb-15 lg:px-10 px-5 xl:px-0"> 
             <CustomH2 className="text-[1.125rem] xl:text-[2rem] xl:h-11.5 mb-5 xl:mb-10 relative pb-1 xl:pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] xl:after:h-[2px] after:bg-gradient-to-r after:from-[#7A5DFC] after:to-[#EC6B90]">Contatos</CustomH2>
-            <div className="flex flex-col xl:flex-row w-full gap-5">
+            <div className="flex flex-col lg:flex-row w-full gap-5">
                 <form className="flex flex-col w-full max-w-147.25">
                     <div className="flex flex-col xl:flex-row gap-3.25 mb-4.5">
                         <div className="flex flex-col w-full">
@@ -30,6 +30,7 @@ export const SectionContacts = () => {
                     </div>
                     <button type="submit" className="w-full h-11 xl:h-12 cursor-pointer drop-shadow-[0_0_4px] drop-shadow-primary rounded-[0.625rem] bg-primary text-white text-base xl:text-[1.125rem] border border-black/64 font-fira-sans font-medium">Enviar Mensagem</button>
                 </form>
+
                 <div className="flex flex-col justify-between w-full max-w-147.25 p-3 xl:p-5 bg-card-background border border-card-border rounded-[0.625rem]">
                     <div className="flex flex-col">
                         <CustomH2 className="text-[1.125rem] xl:text-[1.5rem] mb-4.5">Informações de Contato</CustomH2>

@@ -12,8 +12,8 @@ export const Header = () => {
 		{ id: "contacts", label: "Contatos" },
 	];
 	return (
-		<header className="fixed z-40 h-17.5 w-screen  backdrop-blur-xl border-b border-b-border-header flex items-center justify-center">
-			<div className="flex justify-between w-full max-w-299.5 items-center  px-5  xl:px-0">
+		<header className="fixed z-40 h-17.5 w-screen backdrop-blur-xl border-b border-b-border-header flex items-center justify-center">
+			<div className="flex justify-between w-full max-w-299.5 items-center  px-5 lg:px-10  xl:px-0">
 			<h2 className="text-white  font-fira-sans font-bold text-[1.125rem] ">
 				Marcelo Augusto.dev
 			</h2>
