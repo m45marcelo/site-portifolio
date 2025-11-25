@@ -21,7 +21,7 @@ export const CardProject = () => {
 				// biome-ignore lint/a11y/noRedundantAlt: <explanation>
 				alt="image project"
 				src={imageProject1}
-				className="h-35 md:h-auto xl:h-55 w-full rounded-t-lg "
+				className="h-40 md:h-45 xl:h-55 w-full rounded-t-lg "
 			/>
 
 			<div className="w-full flex flex-col p-3.5">

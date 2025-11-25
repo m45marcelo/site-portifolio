@@ -10,7 +10,7 @@ export const Hero = () => {
 			id="home"
 			className="w-full max-w-[74.875rem] flex flex-col mt-25 mb-10 px-5 lg:px-10 xl:h-104.5 xl:px-0 xl:mt-[12.6875rem] xl:mb-15 xl:flex-row xl:justify-between"
 		>
-			<div className="h-full w-full flex flex-col items-center">
+			<div className="h-full w-full flex flex-col items-center xl:items-start">
 				<h2 className="text-[0.75rem] lg:text-base flex justify-center xl:justify-start xl:text-2xl font-medium font-fira-sans text-white">
 					Olá, me chamo Marcelo Augusto
 				</h2>
