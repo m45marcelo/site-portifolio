@@ -8,14 +8,14 @@ export const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="h-104.5 w-full max-w-[74.875rem] flex flex-col mt-30 mb-5 px-5 xl:px-0 xl:mt-[12.6875rem] xl:mb-15 xl:flex-row xl:justify-between"
+			className="w-full max-w-[74.875rem] flex flex-col mt-25 mb-10 px-5 xl:h-104.5 xl:px-0 xl:mt-[12.6875rem] xl:mb-15 xl:flex-row xl:justify-between"
 		>
-			<div className="h-full w-full max-w-176 flex flex-col">
-				<h2 className="text-[12px] flex justify-center xl:justify-start xl:text-2xl font-medium font-fira-sans text-white">
+			<div className="h-full w-full  flex flex-col">
+				<h2 className="text-[0.75rem] flex justify-center xl:justify-start xl:text-2xl font-medium font-fira-sans text-white">
 					Olá, me chamo Marcelo Augusto
 				</h2>
 
-				<div className="flex flex-col w-full max-w-[688px] h-32">
+				<div className="flex flex-col items-center w-full xl:max-w-[688px] xl:h-32">
 					<div className="flex w-full items-center justify-center xl:justify-start">
 						<h1 className="flex items-center text-2xl font-bold text-white  xl:h-16 xl:text-[4rem] xl:tracking-tight xl:w-[220px]">
 							Sou um
@@ -25,7 +25,7 @@ export const Hero = () => {
 						</h1>
 					</div>
 
-					<div className="flex w-full items-center justify-center xl:justify-start">
+					<div className="flex mb-4 w-full items-center justify-center xl:justify-start xl:mb-0">
 						<h1 className="flex items-center   text-2xl font-bold text-primary  xl:h-16 xl:text-[4rem] xl:tracking-tight xl:w-[282px]">
 							Full Stack
 						</h1>
@@ -34,20 +34,22 @@ export const Hero = () => {
 						</h1>
 					</div>
 
-					<div className="relative h-full w-91 flex xl:hidden">
-						<div className="absolute top-0 right-0 h-50 w-50 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary" />
-						<div className="absolute z-5 -rotate-45 h-40.5 w-40.5 drop-shadow-[0px_0px_10px] drop-shadow-[#34276B]/40 top-7 right-7 rounded-full bg-[#9271FF]" />
-						<div className="absolute z-10 border -rotate-45 border-[#34276B]/50 drop-shadow-[-32px_8px_10px] drop-shadow-[#34276B] top-7 right-7 h-40.5 w-40.5 rounded-full bg-[#9271FF]" />
+					<div className="w-full xl:w-91 flex justify-center items-center xl:hidden">
+						<div className="relative h-34 w-34">
+							<div className="absolute top-0 left-0 h-34 w-34 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary" />
+							<div className="absolute z-5 -rotate-45 h-29 w-29 top-2.5 left-2.5 drop-shadow-[0px_0px_10px] drop-shadow-[#34276B]/40 rounded-full bg-[#9271FF]" />
+							<div className="absolute z-10 border h-29 w-29 top-2.5 left-2.5 -rotate-45 border-[#34276B]/50 drop-shadow-[-12px_8px_10px] drop-shadow-[#34276B] rounded-full bg-[#9271FF]" />
 
-						<img
-							alt="imagem usuário"
-							src={imageUser}
-							className="absolute z-20 top-15 right-15 bg-[#E3E4E6] border-[3px] border-white rounded-full h-30.5 w-30.5"
-						/>
+							<img
+								alt="imagem usuário"
+								src={imageUser}
+								className="absolute z-20 h-23.75 w-23.75 top-5.25 left-5.25 bg-[#E3E4E6] border-[3px] border-white rounded-full"
+							/>
+						</div>
 					</div>
 				</div>
 
-				<CustomText className="text-[12px] font-normal w-full max-w-157.75 text-text-light xl:mt-6.5 xl:h-18.75 xl:text-[1.125rem] xl:leading-5.5">
+				<CustomText className="text-[0.75rem] md:text-base leading-4.5 text-center font-normal w-full md:mt-4 xl:max-w-157.75 text-text-light mt-6 xl:text-left xl:mt-6.5 xl:h-18.75 xl:text-[1.125rem] xl:leading-5.5">
 					Desenvolvedor apaixonado por tecnologia, com experiência em
 					Front-End e Back-End com Node.js. Gosto de criar interfaces
 					modernas e soluções escaláveis que unem design, performance
@@ -55,20 +57,19 @@ export const Hero = () => {
 				</CustomText>
 
 				{/* ICONS */}
-				<div className="flex gap-2.5 mt-3.75  xl:mb-10">
+				<div className="flex w-full gap-0.75 mt-3.75 mb-5 sm:justify-center xl:gap-2.5 xl:mb-10">
 					{STACKS.map((item) => (
 						<CardIconStack
 							key={item.name}
 							stackName={item.name}
-							heightIcon={32}
-							widthIcon={32}
 							imageStack={item.icon}
-							className="h-5 w-10 xl:h-12 xl:w-12 rounded-lg"
+							heightIcon={"h-4 w-4 md:h-6 md:w-6 xl:h-8 xl:w-8"}
+							className="h-6 w-6 md:h-8 md:w-8 xl:h-12 xl:w-12 rounded-lg"
 						/>
 					))}
 				</div>
 
-				<div className="flex gap-2.5 xl:gap-4.5">
+				<div className="w-full flex gap-2.5 xl:gap-4.5">
 					<CustomButton isPrimary className="h-8 w-[47%] xl:w-auto xl:h-12.5 xl:px-11.5">
 						<a
 							href="#home"
@@ -91,14 +92,14 @@ export const Hero = () => {
 
 			{/* Avatar */}
 			<div className="relative h-full w-91 hidden xl:flex">
-				<div className="absolute top-0 right-0 h-91 w-91 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary" />
-				<div className="absolute z-5 -rotate-45 drop-shadow-[0px_0px_10px] drop-shadow-[#34276B]/40 top-7 right-7 h-76.5 w-76.5 rounded-full bg-[#9271FF]" />
-				<div className="absolute z-10 border -rotate-45 border-[#34276B]/50 drop-shadow-[-32px_8px_10px] drop-shadow-[#34276B] top-7 right-7 h-76.5 w-76.5 rounded-full bg-[#9271FF]" />
+				<div className="absolute top-0 right-0 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary xl:h-91 xl:w-91"/>
+				<div className="absolute  z-5 -rotate-45 drop-shadow-[0px_0px_10px] drop-shadow-[#34276B]/40 top-7 right-7  rounded-full bg-[#9271FF] xl:h-76.5 xl:w-76.5" />
+				<div className="absolute  z-10 border -rotate-45 border-[#34276B]/50 drop-shadow-[-32px_8px_10px] drop-shadow-[#34276B] top-7 right-7 rounded-full bg-[#9271FF] xl:h-76.5 xl:w-76.5" />
 
 				<img
 					alt="imagem usuário"
 					src={imageUser}
-					className="absolute z-20 top-15 right-15 bg-[#E3E4E6] border-[3px] border-white rounded-full h-60.5 w-60.5"
+					className="absolute z-20 top-15 right-15 bg-[#E3E4E6] border-[3px] border-white rounded-full xl:h-60.5 w-60.5"
 				/>
 			</div>
 		</section>

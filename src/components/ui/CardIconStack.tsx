@@ -4,8 +4,7 @@ interface CardIconStackProps {
 	stackName: string;
 	className: string;
 	imageStack: string;
-	heightIcon: number;
-	widthIcon: number;
+	heightIcon: string;
 }
 
 export const CardIconStack = React.memo(function CardIconStack({
@@ -13,7 +12,6 @@ export const CardIconStack = React.memo(function CardIconStack({
 	className,
 	imageStack,
 	heightIcon,
-	widthIcon,
 }: CardIconStackProps) {
 	const [stateTooltip, setStateTooltip] = useState<"hidden" | "flex">(
 		"hidden",
@@ -25,10 +23,8 @@ export const CardIconStack = React.memo(function CardIconStack({
 			onMouseLeave={() => setStateTooltip("hidden")}
 			className={`${className} relative cursor-pointer flex bg-transparent items-center justify-center border border-card-border`}
 		>
-			<img
-				height={heightIcon}
-				width={widthIcon}
-				className="absolute"
+			<img	
+				className={`${heightIcon} absolute`}
 				alt="icon stack"
 				src={imageStack}
 			/>

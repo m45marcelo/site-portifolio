@@ -16,18 +16,18 @@ import { CustomButtonAction } from "./CustomButonAction";
 
 export const CardProject = () => {
 	return (
-		<div className="h-105.5 w-full max-w-96.5 flex flex-col rounded-lg border border-card-border bg-card-background">
+		<div className="xl:h-105.5 w-full max-w-96.5 flex flex-col rounded-lg border border-card-border bg-card-background">
 			<img
 				// biome-ignore lint/a11y/noRedundantAlt: <explanation>
 				alt="image project"
 				src={imageProject1}
-				className="h-55 w-full rounded-t-lg "
+				className="h-35 xl:h-55 w-full rounded-t-lg "
 			/>
 
 			<div className="w-full flex flex-col p-3.5">
 				<div className="flex justify-between">
 					<div className="flex flex-col">
-						<CustomH2 className="text-2xl mb-1.5 h-7.25">
+						<CustomH2 className="text-[1.125rem] xl:text-2xl mb-1.5 h-7.25">
 							Webportifolios
 						</CustomH2>
 						<div className="flex gap-1.5 mb-2.5">
@@ -66,7 +66,7 @@ export const CardProject = () => {
 						<CustomButtonAction icon="Enter" heightButton="small" heightIcon={20} widthIcon={20}/>
 					</div>
 				</div>
-				<CustomText className="text-base font-light text-text-light leading-4.75">
+				<CustomText className="text-[13px] xl:text-base font-light text-text-light leading-4.75">
 					Projeto Full-Stack de um Gerenciador de despesas pessoal
 					totalmente funcional, onde o usuário poderá registrar suas
 					despesas, receitas, assinaturas e criar orçamentos de

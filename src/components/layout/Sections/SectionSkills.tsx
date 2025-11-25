@@ -9,11 +9,11 @@ import iconMoveis from "../../../assets/icon-moveis.png";
 
 export const SectionSkills = () => {
 	return (
-		<section id="skills" className="h-150 w-full max-w-299.5 flex flex-col items-center mb-15">
-			<CustomH2 className="text-[2rem] h-11.5 mb-10 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-[#7A5DFC] after:to-[#EC6B90]">
+		<section id="skills" className="h-150 w-full max-w-299.5 flex flex-col items-center mb-275 xl:mb-15 px-5 xl:px-0">
+			<CustomH2 className="text-[1.125rem] xl:text-[2rem] xl:h-11.5 mb-5 xl:mb-10 relative pb-1 xl:pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] xl:after:h-[2px] after:bg-gradient-to-r after:from-[#7A5DFC] after:to-[#EC6B90]">
 				Habilidades
 			</CustomH2>
-            <div className="h-130 w-full grid grid-cols-3 grid-rows-2 gap-5 ">
+            <div className="xl:h-130 w-fit xl:w-full grid xl:grid-cols-3 xl:grid-rows-2 gap-5 ">
                 <CardSkill icon={iconResponsive} skilName="Design Web Responsivo" skillDescription="Desenvolvimento de interfaces que se adaptam automaticamente a diferentes tamanhos de tela, utilizando técnicas de CSS Flexbox, Grid e media queries para garantir uma ótima experiência em qualquer dispositivo."/>
                 <CardSkill icon={iconUi} skilName="Design de Interface do Usuário (UI Design)" skillDescription="Criação de interfaces visuais modernas e funcionais, aplicando boas práticas de front-end, cores, espaçamento e componentes reutilizáveis em frameworks como React e Tailwind CSS."/>
                 <CardSkill icon={iconUx} skilName="Experiência do Usuário (UX Design)" skillDescription="Aplicação de conceitos de usabilidade e acessibilidade no desenvolvimento de páginas web, com foco em fluxos intuitivos, feedbacks visuais e interações agradáveis ao usuário."/>
