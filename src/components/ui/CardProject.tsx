@@ -23,7 +23,7 @@ export const CardProject = ({
 	addressSite
 }: CardProjectProps) => {
 	return (
-		<div className="xl:h-105.5 w-full max-w-96.5 flex flex-col rounded-lg border border-card-border bg-card-background">
+		<div className="xl:h-105.5 w-full max-w-72 md:max-w-96.5 flex flex-col rounded-lg border border-card-border bg-card-background">
 			<img
 				// biome-ignore lint/a11y/noRedundantAlt: <explanation>
 				alt="image project"
@@ -55,6 +55,7 @@ export const CardProject = ({
 					</div>
 						</div>
 						<div className="flex gap-1.5 mb-2.5">
+
 							{STACKS.map((item) =>
 								stacksProject.includes(item.name) ? (
 									<CardIconStack
