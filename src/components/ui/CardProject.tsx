@@ -1,8 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
-import iconCss from "../../assets/icon-css.png";
-import iconHtml from "../../assets/icon-html.png";
-import iconReact from "../../assets/icon-react.png";
-import iconTailwind from "../../assets/icon-tailwind.png";
+
 import { STACKS } from "../../constants/stacks";
 import { CustomH2 } from "../other/CustomH2";
 import { CustomText } from "../other/CustomText";
