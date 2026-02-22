@@ -1,4 +1,5 @@
-import imageUser from "../../../assets/image-user2.png";
+import heroCircle from "../../../assets/hero-circle.png";
+import imageUser from "../../../assets/image-user.png";
 import { STACKS } from "../../../constants/stacks";
 import { CustomText } from "../../other/CustomText";
 import { CardIconStack } from "../../ui/CardIconStack";
@@ -8,9 +9,9 @@ export const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="w-full max-w-[74.875rem] flex flex-col mt-25 mb-10 px-5 lg:px-10 xl:h-104.5 xl:px-0 xl:mt-[12.6875rem] xl:mb-15 xl:flex-row xl:justify-between"
+			className="w-full max-w-[74.875rem] items-center flex flex-col mt-25 mb-10 px-5 lg:px-10 xl:h-104.5 xl:px-0 xl:mt-[12.6875rem] xl:mb-15 xl:flex-row xl:justify-between"
 		>
-			<div className="h-full w-full flex flex-col items-center xl:items-start">
+			<div className="h-full w-full max-w-[47.5rem] flex flex-col items-center xl:items-start">
 				<h2 className="text-[0.75rem] lg:text-base flex justify-center xl:justify-start xl:text-2xl font-medium font-fira-sans text-white">
 					Olá, me chamo Marcelo Augusto
 				</h2>
@@ -37,14 +38,19 @@ export const Hero = () => {
 					</div>
 					<div className="w-full flex justify-center items-center xl:hidden">
 						<div className="relative h-34 w-34">
-							<div className="absolute top-0 left-0 h-34 w-34 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary" />
+							<img
+								alt="mj"
+								src={heroCircle}
+								className="absolute top-0 left-0 h-34 w-34"
+							/>
+							{/* <div className="absolute top-0 left-0 h-34 w-34 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary" />
 							<div className="absolute z-5 -rotate-45 h-29 w-29 top-2.5 left-2.5 drop-shadow-[0px_0px_10px] drop-shadow-[#34276B]/40 rounded-full bg-[#9271FF]" />
-							<div className="absolute z-10 border h-29 w-29 top-2.5 left-2.5 -rotate-45 border-[#34276B]/50 drop-shadow-[-12px_8px_10px] drop-shadow-[#34276B] rounded-full bg-[#9271FF]" />
+							<div className="absolute z-10 border h-29 w-29 top-2.5 left-2.5 -rotate-45 border-[#34276B]/50 drop-shadow-[-12px_8px_10px] drop-shadow-[#34276B] rounded-full bg-[#9271FF]" /> */}
 
 							<img
 								alt="imagem usuário"
 								src={imageUser}
-								className="absolute z-20 h-23.75 w-23.75 top-5.25 left-5.25 bg-[#E3E4E6] border-[3px] border-white rounded-full"
+								className="absolute z-20 h-19 w-19 top-7.75 left-7.5 bg-[#E3E4E6] border-[3px] border-white rounded-full"
 							/>
 						</div>
 					</div>
@@ -71,10 +77,7 @@ export const Hero = () => {
 				</div>
 
 				<div className="w-full xl:max-w-[436px] flex justify-between xl:gap-4.5">
-					<CustomButton
-						isPrimary
-						className="h-8 w-[49%] "
-					>
+					<CustomButton isPrimary className="h-8 w-[49%] ">
 						<a
 							href="#home"
 							className="text-white h-full w-full flex items-center justify-center font-fira-sans font-semibold text-[12px] lg:text-base xl:text-[1.25rem] drop-shadow-[0_4px_4px] drop-shadow-black/25"
@@ -83,10 +86,7 @@ export const Hero = () => {
 						</a>
 					</CustomButton>
 
-					<CustomButton
-						isPrimary={false}
-						className="h-8 w-[49%]"
-					>
+					<CustomButton isPrimary={false} className="h-8 w-[49%]">
 						<a
 							href="#contacts"
 							className="text-white h-full w-full flex items-center justify-center font-fira-sans font-semibold text-[12px] lg:text-base xl:text-[1.25rem] drop-shadow-[0_4px_4px] drop-shadow-black/25"
@@ -98,16 +98,20 @@ export const Hero = () => {
 			</div>
 
 			{/* Avatar */}
-			<div className="relative h-full w-91 hidden xl:flex">
-				<div className="absolute top-0 right-0 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary xl:h-91 xl:w-91" />
-				<div className="absolute  z-5 -rotate-45 drop-shadow-[0px_0px_10px] drop-shadow-[#34276B]/40 top-7 right-7  rounded-full bg-[#9271FF] xl:h-76.5 xl:w-76.5" />
-				<div className="absolute  z-10 border -rotate-45 border-[#34276B]/50 drop-shadow-[-32px_8px_10px] drop-shadow-[#34276B] top-7 right-7 rounded-full bg-[#9271FF] xl:h-76.5 xl:w-76.5" />
-
+			<div className="relative h-full w-100 hidden xl:flex">
 				<img
-					alt="imagem usuário"
-					src={imageUser}
-					className="absolute z-20 top-15 right-15 bg-[#E3E4E6] border-[3px] border-white rounded-full xl:h-60.5 w-60.5"
+					alt="mj"
+					src={heroCircle}
+					className="absolute -top-5 right-0 xl:h-100 xl:w-100"
 				/>
+
+				<div className="absolute z-10 top-15.5 right-19.5 xl:h-60.5 w-60.5 bg-[#E3E4E6] border-[6px] border-white rounded-full">
+					<img
+						alt="imagem usuário"
+						src={imageUser}
+						className="rounded-full h-full w-full"
+					/>
+				</div>
 			</div>
 		</section>
 	);

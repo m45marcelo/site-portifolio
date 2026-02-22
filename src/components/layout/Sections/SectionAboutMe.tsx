@@ -6,7 +6,7 @@ export const SectionAboutMe = () => {
 	return (
 		<section
 			id="about-me"
-			className="w-full lg:px-10 px-5 z-30 flex flex-col items-center max-w-299.5 xl:h-143 mb-10 xl:mb-15 xl:px-0"
+			className="w-full lg:px-10 px-5 flex flex-col items-center max-w-299.5 xl:h-143 mb-10 xl:mb-15 xl:px-0"
 		>
 			<CustomH2 className="text-[1.125rem] xl:text-[2rem] xl:h-11.5 mb-5 xl:mb-10 relative pb-1 xl:pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] xl:after:h-[2px] after:bg-gradient-to-r after:from-[#7A5DFC] after:to-[#EC6B90]">
 				Sobre Min

@@ -9,6 +9,7 @@ interface CustomButtonActionProps {
 	heightButton: "small" | "medium";
 	heightIcon: number;
 	widthIcon: number;
+	addressSite?: string;
 }
 
 export const CustomButtonAction = ({
@@ -16,6 +17,7 @@ export const CustomButtonAction = ({
 	heightIcon,
 	widthIcon,
 	heightButton,
+	addressSite
 }: CustomButtonActionProps) => {
 	const [stateTooltip, setStateTooltip] = useState<"hidden" | "flex">(
 		"hidden",
@@ -27,8 +29,8 @@ export const CustomButtonAction = ({
 			type="button"
 			className={
 				heightButton === "small"
-					? "relative rounded-full cursor-pointer h-9.5 w-9.5 flex items-center justify-center bg-icons-background border border-card-border"
-					: "relative rounded-full cursor-pointer h-10 w-10 flex items-center justify-center bg-icons-background border border-card-border"
+					? "relative rounded-full cursor-pointer sm:h-9.5 sm:w-9.5 flex h-7 w-7 items-center justify-center bg-icons-background border border-card-border"
+					: "relative rounded-full cursor-pointer sm:h-9.5 sm:w-9.5 flex h-7 w-7 items-center justify-center bg-icons-background border border-card-border"
 			}
 		>
 			{icon === "GitHub" && (
@@ -38,8 +40,7 @@ export const CustomButtonAction = ({
 						<img
 							alt="icon github"
 							src={iconGitHub}
-							height={heightIcon}
-							width={widthIcon}
+							height={20}
 						/>
 					</a>
 					<span
@@ -53,12 +54,11 @@ export const CustomButtonAction = ({
 			{icon === "Enter" && (
 				<>
 					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
-					<a href="https://github.com/m45marcelo" target="_blank">
+					<a href={addressSite} target="_blank">
 						<img
 							alt="icon enter"
 							src={iconEnter}
-							height={heightIcon}
-							width={widthIcon}
+							height={20}
 						/>
 					</a>
 
@@ -77,8 +77,7 @@ export const CustomButtonAction = ({
 						<img
 							alt="icon linkedin"
 							src={iconLinkedin}
-							height={heightIcon}
-							width={widthIcon}
+							className="sm:h-[1rem] sm:w-[1rem] h-[1.25rem] w-[1.25rem]"
 						/>
 					</a>
 					<span

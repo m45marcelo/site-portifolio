@@ -24,7 +24,7 @@ export const CardIconStack = React.memo(function CardIconStack({
 			className={`${className} relative cursor-pointer flex bg-transparent items-center justify-center border border-card-border`}
 		>
 			<img	
-				className={`${heightIcon} absolute`}
+				className={`${heightIcon} xl:h-4.5 absolute`}
 				alt="icon stack"
 				src={imageStack}
 			/>

@@ -1,49 +1,60 @@
-import { useEffect, useState } from "react";
-
-
+import { lazy, Suspense } from "react";
 import { Background } from "./components/layout/Background/Background";
+import { Footer } from "./components/layout/Footer/Footer";
+// Mantenha os essenciais (Hero e Header) com import normal
 import { Header } from "./components/layout/Header/Header";
 import { Hero } from "./components/layout/Hero/Hero";
-import { SectionSkills } from "./components/layout/Sections/SectionSkills";
-import { SectionAboutMe } from "./components/layout/Sections/SectionAboutMe";
-import { SectionProjects } from "./components/layout/Sections/SectionProjects";
-import { SectionContacts } from "./components/layout/Sections/SectionContacts";
-import { Footer } from "./components/layout/Footer/footer";
 import { Loader } from "./components/layout/Loader/Loader";
+import { SectionContacts } from "./components/layout/Sections/SectionContacts";
+import { SectionSkills } from "./components/layout/Sections/SectionSkills";
 
+// Carregue o resto "sob demanda"
+const SectionAboutMe = lazy(() =>
+	import("./components/layout/Sections/SectionAboutMe").then((module) => ({
+		default: module.SectionAboutMe,
+	})),
+);
+const SectionProjects = lazy(() =>
+	import("./components/layout/Sections/SectionProjects").then((module) => ({
+		default: module.SectionProjects,
+	})),
+);
+// ... outros imports
 function App() {
-    const [loading, setLoading] = useState(true);
+	// const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const handleLoad = () => {
-            // Espera 2 segundos após o carregamento
-            setTimeout(() => {
-                setLoading(false);
-            }, 2000);
-        };
+	// useEffect(() => {
+	//     // Função para encerrar o loading
+	//     const stopLoading = () => {
+	//         setTimeout(() => {
+	//             setLoading(false);
+	//         }, 0000);
+	//     };
 
-        window.addEventListener("load", handleLoad);
+	//     // Se o documento já terminou de carregar, cancelamos o loader imediatamente
+	//     if (document.readyState === "complete") {
+	//         stopLoading();
+	//     } else {
+	//         window.addEventListener("load", stopLoading);
+	//         return () => window.removeEventListener("load", stopLoading);
+	//     }
+	// }, []);
 
-        return () => window.removeEventListener("load", handleLoad);
-    }, []);
+	// if (loading) {
+	//     return <Loader />;
+	// }
 
-    if (loading) {
-        return <Loader />;
-    }
-
-    return (
-        <Background>
-            <Header />
-            <div className="absolute top-0 left-0 w-full flex flex-col justify-center items-center">
-                <Hero />
-                <SectionAboutMe />
-                <SectionSkills />
-                <SectionProjects />
-                <SectionContacts />
-                <Footer />
-            </div>
-        </Background>
-    );
+	return (
+		<div className="w-full flex flex-col justify-center items-center bg-[url(./assets/backgroundImage.png)] bg-cover bg-center">
+			<Header />
+			<Hero />
+			<SectionAboutMe />
+			<SectionSkills />
+			<SectionProjects />
+			<SectionContacts />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
