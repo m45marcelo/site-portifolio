@@ -57,7 +57,7 @@ export const SectionProjects = () => {
             <div className="grid sm:grid-cols-3 sm:grid-rows-2 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 gap-5 w-full justify-center">
                 {
                     projects.map((item) => (
-                        <CardProject key={item.name} nameProject={item.name} descriptionProject={item.description} addressSite={item.addressSite} gitProject="" imageProject={item.image} stacksProject={item.stacks}/>
+                        <CardProject key={item.name} nameProject={item.name} descriptionProject={item.description} addressSite={item.addressSite} gitProject={item.gitProject} imageProject={item.image} stacksProject={item.stacks}/>
                     ))
                 }
             </div>
