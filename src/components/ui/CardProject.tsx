@@ -11,6 +11,7 @@ interface CardProjectProps {
 	imageProject: string;
 	stacksProject: string[];
 	addressSite: string;
+	gitProject: string;
 }
 
 export const CardProject = ({
@@ -18,7 +19,8 @@ export const CardProject = ({
 	descriptionProject,
 	imageProject,
 	stacksProject,
-	addressSite
+	addressSite,
+	gitProject
 }: CardProjectProps) => {
 	return (
 		<div className="xl:h-105.5 w-full max-w-72 md:max-w-96.5 flex flex-col rounded-lg border border-card-border bg-card-background hover:scale-101">
@@ -42,6 +44,7 @@ export const CardProject = ({
 							heightButton="small"
 							heightIcon={24}
 							widthIcon={24}
+							gitProject={gitProject}
 						/>
 						<CustomButtonAction
 							icon="Enter"

@@ -10,6 +10,7 @@ interface CustomButtonActionProps {
 	heightIcon: number;
 	widthIcon: number;
 	addressSite?: string;
+	gitProject?: string;
 }
 
 export const CustomButtonAction = ({
@@ -17,7 +18,8 @@ export const CustomButtonAction = ({
 	heightIcon,
 	widthIcon,
 	heightButton,
-	addressSite
+	addressSite,
+	gitProject
 }: CustomButtonActionProps) => {
 	const [stateTooltip, setStateTooltip] = useState<"hidden" | "flex">(
 		"hidden",
@@ -36,7 +38,7 @@ export const CustomButtonAction = ({
 			{icon === "GitHub" && (
 				<>
 					{/** biome-ignore lint/security/noBlankTarget: <explanation> */}
-					<a href="https://github.com/m45marcelo" target="_blank">
+					<a href={gitProject} target="_blank">
 						<img
 							alt="icon github"
 							src={iconGitHub}
