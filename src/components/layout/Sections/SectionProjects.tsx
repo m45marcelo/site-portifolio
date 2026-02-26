@@ -19,7 +19,7 @@ export const SectionProjects = () => {
         {
             name: "Game Store",
             description: "Projeto Full-Stack de uma loja de games com multiplas páginas e autenticação, onde o usuário poderá simular a compra de jogos.",
-            addressSite: "marceloaugustodev.vercel.app",
+            addressSite: "game-store-opal.vercel.app",
             gitProject: "https://github.com/m45marcelo/game-store",
             image: imageProject2,
             stacks: ["Next", "Tailwind", "Postgres", "Redux"]
@@ -35,7 +35,7 @@ export const SectionProjects = () => {
         {
             name: "Previsão do tempo",
             description: "Projeto simples de uma aplicação que consome uma api que retorna previsões de climas futuros de qualquer cidade.",
-            addressSite: "marceloaugustodev.vercel.app",
+            addressSite: "https://prev-tempo-red.vercel.app/",
             gitProject: "https://github.com/m45marcelo/prev-tempo",
             image: imageProject4,
             stacks: ["HTML", "CSS", "React", "Tailwind"]
