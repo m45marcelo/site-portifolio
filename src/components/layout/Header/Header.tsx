@@ -29,7 +29,7 @@ export const Header = () => {
 		<header className="fixed top-0 z-50 min-h-[50px] lg:top-0 lg:h-[4.375rem] w-full bg-black/10 backdrop-blur-xl border-b border-white/10 flex flex-col items-center justify-center">
 			<div className="flex h-[50px] justify-between w-full max-w-299.5 items-center px-5 lg:px-10  xl:px-0">
 				<h2
-					className="text-white font-fira-sans font-bold text-[1.125rem] text-[0.875rem] lg:text-[1.125rem] leading-[1.4] min-h-[1.6rem]"
+					className="text-white font-fira-sans font-bold md:text-[1.125rem] text-[0.875rem] lg:text-[1.125rem] leading-[1.4] min-h-[1.6rem]"
 				>
 					Marcelo Augusto.dev
 				</h2>
@@ -57,7 +57,7 @@ export const Header = () => {
 						<a
 							key={item.id}
 							href={`#${item.id}`}
-							className={`text-white font-fira-sans font-normal text-[13px] leading-[1.4] h-[1.4rem] flex items-center justify-center rounded-[1.25rem] h-7.5 px-5 ${activeSection === item.id
+							className={`text-white font-fira-sans font-normal text-[13px] leading-[1.4]  flex items-center justify-center rounded-[1.25rem] h-7.5 px-5 ${activeSection === item.id
 								? "drop-shadow-[0_0_4px] drop-shadow-primary bg-primary text-[14px]"
 								: ""
 					}`}

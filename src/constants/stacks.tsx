@@ -9,6 +9,7 @@ import iconRedux from "../assets/icon-redux.png";
 import iconStyledComponents from "../assets/icon-styled-components.png";
 import iconTailwind from "../assets/icon-tailwind.png";
 import iconTypescript from "../assets/icon-typescript.png";
+import iconPostgres from "../assets/icon-postgresql.png"
 
 export const STACKS = [
 	{ name: "HTML", icon: iconHtml },
@@ -22,4 +23,5 @@ export const STACKS = [
 	{ name: "Node", icon: iconNode },
 	{ name: "Express", icon: iconExpress },
 	{ name: "MongoDB", icon: iconMongo },
+	{ name: "Postgres", icon: iconPostgres },
 ];

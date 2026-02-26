@@ -43,10 +43,7 @@ export const Hero = () => {
 								src={heroCircle}
 								className="absolute top-0 left-0 h-34 w-34"
 							/>
-							{/* <div className="absolute top-0 left-0 h-34 w-34 drop-shadow-[0_0_12px] drop-shadow-primary rounded-full bg-primary" />
-							<div className="absolute z-5 -rotate-45 h-29 w-29 top-2.5 left-2.5 drop-shadow-[0px_0px_10px] drop-shadow-[#34276B]/40 rounded-full bg-[#9271FF]" />
-							<div className="absolute z-10 border h-29 w-29 top-2.5 left-2.5 -rotate-45 border-[#34276B]/50 drop-shadow-[-12px_8px_10px] drop-shadow-[#34276B] rounded-full bg-[#9271FF]" /> */}
-
+							
 							<img
 								alt="imagem usuário"
 								src={imageUser}
@@ -79,7 +76,8 @@ export const Hero = () => {
 				<div className="w-full xl:max-w-[436px] flex justify-between xl:gap-4.5">
 					<CustomButton isPrimary className="h-8 w-[49%] ">
 						<a
-							href="#home"
+							href="/Curriculo.pdf"
+							download="Curriculo_Marcelo_Augusto.pdf"
 							className="text-white h-full w-full flex items-center justify-center font-fira-sans font-semibold text-[12px] lg:text-base xl:text-[1.25rem] drop-shadow-[0_4px_4px] drop-shadow-black/25"
 						>
 							Baixar Curriculo
