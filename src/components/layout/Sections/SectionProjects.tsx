@@ -12,7 +12,7 @@ export const SectionProjects = () => {
             name: "FinState",
             description: "Projeto Full-Stack de um Gerenciador de despesas pessoal totalmente funcional, onde o usuário poderá registrar suas despesas, receitas e assinaturas.",
             addressSite: "marceloaugustodev.vercel.app",
-            gitProject: "https://github.com/m45marcelo/fin-state",
+            gitProject: "https://github.com/m45marcelo/fin_state",
             image: imageProject1,
             stacks: ["HTML", "CSS", "Typescript", "Next", "Tailwind", "Redux","MongoDB", "Express"]
         },
